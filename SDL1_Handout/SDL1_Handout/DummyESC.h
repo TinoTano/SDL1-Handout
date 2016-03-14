@@ -4,6 +4,7 @@
 #include "Module.h"
 #include "Globals.h"
 #include "conio.h"
+#include <iostream>
 
 class ModuleDummyESC : public Module
 {
@@ -15,7 +16,10 @@ class ModuleDummyESC : public Module
 
 	int Update(){
 		if (_kbhit()){
-			return UPDATE_STOP;
+			g.key = _getch();
+			if (g.key == 27){ // 27 = ESC key
+				return UPDATE_STOP;
+			}
 		}
 	}
 

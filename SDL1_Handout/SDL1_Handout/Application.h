@@ -36,10 +36,8 @@ public:
 			if (modules[i]->Init() == false){
 				return false;
 			}
-			else{
-				return true;
-			}
 		}
+		return true;
 	}
 
 	// UPDATE all modules

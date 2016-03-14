@@ -14,7 +14,6 @@ enum main_states
 int main(int argc, char *args[])
 {
 	ReportMemoryLeaks();
-	SDL_Init(SDL_INIT_EVERYTHING);
 
 	int main_return = EXIT_FAILURE;
 	main_states state = MAIN_CREATION;
