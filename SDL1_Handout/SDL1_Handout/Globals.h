@@ -31,7 +31,6 @@ struct globals
 	SDL_Texture* background;
 	int background_width;
 	Mix_Music* background_music;
-	char key;
 } g;
 
 #endif

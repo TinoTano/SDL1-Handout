@@ -15,9 +15,9 @@ class ModuleDummyESC : public Module
 	}
 
 	int Update(){
-		if (_kbhit()){
-			g.key = _getch();
-			if (g.key == 27){ // 27 = ESC key
+		if (_kbhit() != 0){
+			char key = _getch();
+			if (key == 27){ // 27 = ESC key
 				return UPDATE_STOP;
 			}
 		}

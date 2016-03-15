@@ -12,7 +12,7 @@ class ModuleMusic : public Module
 		SDL_Init(SDL_INIT_EVERYTHING);
 		Mix_Init(MIX_INIT_OGG);
 		Mix_OpenAudio(MIX_DEFAULT_FREQUENCY, MIX_DEFAULT_FORMAT, 2, 1024);
-		g.background_music = Mix_LoadMUS("music.ogg");
+		g.background_music = Mix_LoadMUS("Game\\HeMan.ogg");
 		if (g.background_music == NULL)
 		{
 			std::cout << "Unable to load Ogg file: \n" << Mix_GetError() << "\n";
